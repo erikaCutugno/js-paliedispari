@@ -1,5 +1,9 @@
 //L’utente sceglie pari o dispari e inserisce un numero da 1 a 5
-const userEvenOrOdd = prompt("Scegli tra pari o dispari")
+let userEvenOrOdd;
+do {
+    userEvenOrOdd = prompt("Scegli tra pari o dispari")
+}while (userEvenOrOdd.toLowerCase() !== "pari" && 
+        userEvenOrOdd.toLowerCase() !== "dispari")
 console.log(`Il giocatore ha scelto "${userEvenOrOdd}"`)
 
 //Inserisce un numero da 1 a 5
