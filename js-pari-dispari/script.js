@@ -27,15 +27,16 @@ let tot = userNumber + cpuNumber
 console.log(`La somma è: ${tot}`)
 
 //Stabiliamo se il numero è pari o dispari
-function isEven(num){
+function isEvenOrOdd(num){
     if(num % 2  === 0){
-        evenOrOdd = "pari"
+        let evenOrOdd = "pari"
         return evenOrOdd;
-    }  
-    evenOrOdd = "dispari"
-    return evenOrOdd;
+    } else{
+        evenOrOdd = "dispari"
+        return evenOrOdd;
+    } 
 }
-const num = isEven(tot);
+const num = isEvenOrOdd(tot);
 console.log(num);
 
 //dichiaro il vincitore
