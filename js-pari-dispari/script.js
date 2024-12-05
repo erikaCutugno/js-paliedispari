@@ -14,8 +14,8 @@ do {
     console.log(`Numero scelto dal giocatore: ${userNumber}`)
 
 //Generiamo un numero random (da 1 a 5) per il computer 
- function randomNumber(min, max){
-    rangeNumber = Math.floor(Math.random(max - min +1) + min)
+ function randomNumber(min,max){
+    rangeNumber = Math.floor(Math.random() * (max - min +1)) + min;
     return rangeNumber
  }
 
